@@ -1,0 +1,33 @@
+#	Byte-compiled / optimised Python files
+__pycache__/
+*.py[cod]
+*$py.class
+
+#	Virtual environment directories
+.venv/
+venv/
+env/
+ENV/
+
+#	Local configuration and credentials
+config/user-config.py
+user-config.py
+config/user-password.py
+user-password.py
+#	any other files storing keys or passwords
+*.secret
+*.key
+password.txt
+oauth-cerdentials.json
+
+#	Pywikibot caches & logs
+user-cache/
+user-logs/
+
+#	Editor and IDE settings
+.vscode/
+.idea/
+
+#	Operator system files
+.DS_Store
+Thumbs.db
