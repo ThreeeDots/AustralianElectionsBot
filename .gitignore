@@ -23,6 +23,7 @@ oauth-cerdentials.json
 #	Pywikibot caches & logs
 user-cache/
 user-logs/
+logs/
 
 #	Editor and IDE settings
 .vscode/
