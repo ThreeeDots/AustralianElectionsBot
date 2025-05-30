@@ -5,6 +5,8 @@ import logging
 import requests
 import re
 
+logging.basicConfig(level=logging.INFO)
+
 class PageNotSavedError(Exception):
 	'''Page saving has failed.'''
 	pass
