@@ -25,6 +25,7 @@ class AustralianElectionsBot(pwb.SingleSiteBot, pwb.CurrentPageBot):
 	3. Include in the results table the svg displaying the composition of the chamber due to that election, if the svg exists.
 	4. Fix any double-redirects caused by pagemoves.
 	5. Embed the results contained in sub-pages into main pages, using {{excerpt}}, which is best practice.
+	6. Recategorise many (most) pages, to clean up 'Category:Elections in Australia'.
 	"""
 
 	def __init__(self, **kwargs):
@@ -39,6 +40,10 @@ class AustralianElectionsBot(pwb.SingleSiteBot, pwb.CurrentPageBot):
 		self.embedding()
 
 	def rename_pages(self):
+		# This function's contents.
+		return
+	
+	def recategorise_pages(self):
 		# This function's contents.
 		return
 
