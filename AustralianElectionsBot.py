@@ -31,6 +31,10 @@ class AustralianElectionsBot(pwb.SingleSiteBot, pwb.CurrentPageBot):
 	def __init__(self, **kwargs):
 		# Initialise SingleSiteBot and CurrentPageBot with configs.
 		super().__init__(site=True, **kwargs)
+		# Create a single iterable list of pages from 'Category:Elections in Australia' incl. subcategories and sub-sub, etc.
+		category = pwb.Category(self.site, 'Category:Elections in Australia')
+		# Using `list()` so that we can iterate over the page collection more than once.
+		self.all_pages = list(pwb.pagegenerators.CategorizedPageGenerator(category, recurse=True))
 
 	def run(self):
 		self.rename_pages()
