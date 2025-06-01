@@ -40,7 +40,15 @@ class AustralianElectionsBot(pwb.SingleSiteBot, pwb.CurrentPageBot):
 
 	def rename_pages(self):
 		# This function's contents.
+		"""
+		This function will complete task 1 and incidental changes which are easier to do here than to repeat later.
+		The goal here is to do the following:
+		1.1 Identify any Australian pages that follow the syntax "Results of the [Year] [Place] [Type] election <([body])>"
+		1.2 Rename (move) each of those pages to a more sensible name.
+		1.3 (Incidental) Recategorise each of those pages such that the Category:Elections in Australia page is more sensible and more easily traversable.
+		"""
 		return
+	
 
 	def update_results_tables(self):
 		# This function's contents.
